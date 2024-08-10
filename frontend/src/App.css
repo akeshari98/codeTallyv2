@@ -1,0 +1,93 @@
+.main {
+  background-color: white;
+  font-size: 17px;
+  display: grid;
+  /* overflow: hidden; */
+  grid-template-columns: auto 1fr;
+  gap: 10px; /* Adjust as needed to create a gap between components */
+  flex: 1;
+}
+
+textarea {
+  font-size: 16px; /* Set the font size to 16 pixels (adjust as needed) */
+  width:max-content;
+  /* Add other styles as needed */
+}
+
+.LHS-container {
+  margin-left: 1.5%;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 10px; /* Adjust as needed for spacing */
+}
+
+.RHS-container {
+  /* position: sticky; */
+  right: 0;
+  max-height: 100vh;
+  top: 0;
+  overflow: auto;
+  padding: 10px; /* Adjust as needed for spacing */
+}
+
+.RHS {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-output {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1; /* The input/output area takes up the remaining space */
+}
+
+button {
+  margin-top: 10px; /* Adjust margin as needed */
+  max-width: 90px;
+}
+
+.username {
+  display: flex;
+  flex-direction:row;
+}
+
+.Samples {
+  /* color: red; */
+  display: flex;
+  flex-direction: row;
+  /* margin: 100px; */
+}
+
+.Sample-input {
+  margin-right: 50px;
+  border-color: black;
+}
+
+/* Include this in your CSS file or inside a <style> tag in your component */
+.split {
+  display: flex;
+  height: 100%;
+}
+
+.LHS-container, .RHS-container {
+  /* overflow: auto; */
+  width: max-content;
+}
+
+.gutter {
+  background-color: #ddd; /* Light grey background for the gutter */
+  cursor: col-resize; /* Cursor style when hovering over the gutter */
+  height: 100%; /* Full height for vertical split */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+.gutter-horizontal {
+  width: 10px; /* Width of the gutter */
+  margin: 0 -5px; /* Adjust for proper positioning */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
+}
+
+.problem-statement {
+  padding-right: 0px;
+}
